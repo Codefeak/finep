@@ -45,6 +45,9 @@ body {
 .nav .nav-item a:hover{
   color: rgb(231,255,110);
 }
+.nav .nav-item .active {
+  color: rgb(231,255,110);
+}
 .main_content {
   height: 500px;
   padding-top: 100px;
@@ -72,4 +75,10 @@ body {
   border: none;
   --bs-dropdown-link-hover-bg : transparent;
   --bs-dropdown-link-hover-color : rgb(231,255,110);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }
