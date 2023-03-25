@@ -2,140 +2,912 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>Finep</title>
   </head>
   <body>
+    
     <div class="container-fluid text-center">
-        <div class="page_bg">
-            <div id="header_content" class="header_content">
-                <div class="row" style="padding-top: 40px"}>
-                    <div class="col col-4" >
-                        <img class="site_logo" src="images/water-drop.svg">
-                    </div>
-                    <div class="col col-8 site_heading text-start">
-                        <div style="padding: 0 10px">
-                            <h1>Finep Engineering</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row"}>
-                    <div class="col col-4">
-                    </div>
-                    <div class="col col-8 site_heading text-start">
-                        <div>
-                            <ul class="nav">
-                                <li class="nav-item">
-                                  <a id="a-home" class="nav-link active" aria-current="page" href="#home_page" onclick='return handleClick(event)'>Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="a-services" class="nav-link" aria-current="page" href="#services_page" onclick='return handleClick(event)'>Services</a>
-                                  </li>
-                                <li class="nav-item dropdown">
-                                  <a id="a-about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >About</a>
-                                  <ul class="dropdown-menu">
-                                    <li><a id="a-about_background_page" class="dropdown-item" href="#about_background_page" onclick='return handleClick(event)'>Background</a></li>
-                                    <li><a id="a-about_what_we_do_page" class="dropdown-item" href="#about_what_we_do_page" onclick='return handleClick(event)'>What We Do</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="a-corporate" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Corporate</a>
-                                    <ul class="dropdown-menu">
-                                      <li><a id="a-corporate_management_page" class="dropdown-item" href="#corporate_management_page" onclick='return handleClick(event)'>Management</a></li>
-                                      <li><a id="a-corporate_governance_page" class="dropdown-item" href="#corporate_governance_page" onclick='return handleClick(event)'>Corporate govenrance</a></li>
-                                      <li><a id="a-corporate_environmental_policy_page" class="dropdown-item" href="#corporate_environmental_policy_page" onclick='return handleClick(event)'>Environmental policy</a></li>
-                                    </ul>
-                                  </li>
-                                <li class="nav-item">
-                                  <a id="a-projects" class="nav-link" href="#projects_page" onclick='return handleClick(event)'>Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="a-contact" class="nav-link" href="#contact_page" onclick='return handleClick(event)'>Contact</a>
-                                </li>
-                              </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="page_bg">
+        <div id="header_content" class="header_content">
+          <div class="row" style="padding-top: 40px" }>
+            <div class="col col-4">
+              <img class="site_logo" src="images/water-drop.svg" />
             </div>
-            <div id="main_content" class="main_content">
-                <div id="home_page" class="show">
-                  <p>BUSINESS DEVELOPMENT</p>
-                  <p>AND</p>
-                  <p>ENGINEERING </p>
-                </div>
-                <div id="services_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="about_background_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="about_what_we_do_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="corporate_management_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="corporate_governance_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="corporate_environmental_policy_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="projects_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
-                <div id="contact_page" class="hide">
-                  <p>UNDER CONSTRUCTION</p>
-                </div>
+            <div class="col col-8 site_heading text-start">
+              <div style="padding: 0 10px">
+                <h1>Finep Engineering</h1>
+              </div>
             </div>
-            <div id="footer_content" class="yellow_bg footer_container">
-
+          </div>
+          <div class="row large-screen">
+            <div class="col col-4 "></div>
+            <div class="col col-8 site_heading text-start">
+              <div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      id="a-home_page"
+                      class="nav-link active"
+                      aria-current="page"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-services_page"
+                      class="nav-link"
+                      aria-current="page"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      id="a-about"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="javascript:;"
+                      role="button"
+                      aria-expanded="false"
+                      >About</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          id="a-about_background_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Background</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-about_what_we_do_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >What We Do</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-corporate"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="javascript:;"
+                      role="button"
+                      aria-expanded="false"
+                      >Corporate</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          id="a-corporate_management_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Management</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-corporate_governance_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Corporate govenrance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-corporate_environmental_policy_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Environmental policy</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-projects_page"
+                      class="nav-link"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-contact_page"
+                      class="nav-link"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="row mobile-screen">
+            <div class="col col-1 "></div>
+            <div class="col col-11 site_heading text-start">
+              <div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      id="a-home_page"
+                      class="nav-link active"
+                      aria-current="page"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-services_page"
+                      class="nav-link"
+                      aria-current="page"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      id="a-about"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="javascript:;"
+                      role="button"
+                      aria-expanded="false"
+                      >About</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          id="a-about_background_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Background</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-about_what_we_do_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >What We Do</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-corporate"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="javascript:;"
+                      role="button"
+                      aria-expanded="false"
+                      >Corporate</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          id="a-corporate_management_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Management</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-corporate_governance_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Corporate govenrance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="a-corporate_environmental_policy_page"
+                          class="dropdown-item"
+                          href="javascript:;"
+                          onclick="return handleClick(event)"
+                          >Environmental policy</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-projects_page"
+                      class="nav-link"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      id="a-contact_page"
+                      class="nav-link"
+                      href="javascript:;"
+                      onclick="return handleClick(event)"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        <div id="main_content" class="main_content">
+          <div id="home_page" class="show">
+            <p>BUSINESS DEVELOPMENT</p>
+            <p>AND</p>
+            <p>ENGINEERING</p>
+          </div>
+          <div id="services_page" class="hide">
+            <div class="yellow_bg large-screen">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>OUR SERVICES</h4>
+                </div>
+                <div class="three_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold">WHAT</span>
+                    </p>
+
+                    <p >
+                      Finep Engineering explore and develop renewable energy
+                      projects and offers technical commercial, engineering and
+                      management services such as technical sales, feasibility
+                      studies, engineering designs and construction supervision.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">HOW</span>
+                    </p>
+                    <p style="line-height: 1.4em;">
+                      Thanks to our broad international support network and
+                      multi-cultural organization, Finep Engineering can support
+                      and develop businesses by cost-efficient use of broad
+                      technical and human resources.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">WHERE</span>
+                    </p>
+                    <p>
+                      Finep Engineering is exploring and developing renewable
+                      energy and related projects in Nepal and civil engineering
+                      projects in the Nordic regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yellow_bg mobile-screen">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>OUR SERVICES</h4>
+                </div>
+                <div class="single_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold">WHAT</span>
+                    </p>
+
+                    <p >
+                      Finep Engineering explore and develop renewable energy
+                      projects and offers technical commercial, engineering and
+                      management services such as technical sales, feasibility
+                      studies, engineering designs and construction supervision.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">HOW</span>
+                    </p>
+                    <p style="line-height: 1.4em;">
+                      Thanks to our broad international support network and
+                      multi-cultural organization, Finep Engineering can support
+                      and develop businesses by cost-efficient use of broad
+                      technical and human resources.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">WHERE</span>
+                    </p>
+                    <p>
+                      Finep Engineering is exploring and developing renewable
+                      energy and related projects in Nepal and civil engineering
+                      projects in the Nordic regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="about_background_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>BACKGROUND</h4>
+                </div>
+                <div class="single_col_container">
+                  <div class="text_container">
+                    <p >
+                      The team behind Finep Engineering has been working with
+                      hydro- and solarpower development for many years. In 2007,
+                      solarpower systems for the Kenyan and Ghanan market were
+                      developed. In 2014, solar systems were developed for the
+                      Nepalese market. It helped build up a good business
+                      network which resulted in an interest to develop
+                      hydropower in Nepal. In 2018, a new company was founded
+                      with the purpose to explore and pursue developments of
+                      renewable energy and civil engineering projects in Nepal,
+                      Ghana and Peru. Finep Engineering is currently focusing on
+                      development of hydropower projects with focus on
+                      electro-mechanical equipment in Nepal, and civil
+                      engineering projects in Nordic regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="about_what_we_do_page" class="hide">
+            <div class="yellow_bg large-screen">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>ABOUT FINEP</h4>
+                </div>
+                <div class="three_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold">WHAT</span>
+                    </p>
+
+                    <p >
+                      Finep Engineering explores business opportunities in the
+                      renewable energy sector in Nepal, focusing on the
+                      development and maintanance of hydropower plants between
+                      about 1 - 80MW. Finep Engineering also explores and
+                      develops civil engineering projects in the Nordic regions.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">HOW</span>
+                    </p>
+                    <p style="line-height: 1.4em;">
+                      We believe in doing business in an open-minded manner
+                      following professionalism, transparency and good business
+                      ethics. We are flexible, accurate, quick and always work
+                      in the interest of our investors and clients.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">WHERE</span>
+                    </p>
+                    <p>
+                      Finep Engineering operates mainly in Nepal and Nordic
+                      regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yellow_bg mobile-screen">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>ABOUT FINEP</h4>
+                </div>
+                <div class="single_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold">WHAT</span>
+                    </p>
+
+                    <p >
+                      Finep Engineering explores business opportunities in the
+                      renewable energy sector in Nepal, focusing on the
+                      development and maintanance of hydropower plants between
+                      about 1 - 80MW. Finep Engineering also explores and
+                      develops civil engineering projects in the Nordic regions.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">HOW</span>
+                    </p>
+                    <p style="line-height: 1.4em;">
+                      We believe in doing business in an open-minded manner
+                      following professionalism, transparency and good business
+                      ethics. We are flexible, accurate, quick and always work
+                      in the interest of our investors and clients.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p style="line-height: 1.4em;">
+                      <span style="font-weight: bold">WHERE</span>
+                    </p>
+                    <p>
+                      Finep Engineering operates mainly in Nepal and Nordic
+                      regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="corporate_management_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>Management</h4>
+                </div>
+                <div class="two_col_containter">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >Marketing & Sales Manager</span
+                      >
+                    </p>
+                    <p >
+                      Mr. Neupane has been working as marketing analysts and
+                      marketing manager in the energy sector for nine years and
+                      three years in the banking sector. Mr. Bijendra has a
+                      Master of Science in Economics and a Bachelors in
+                      Economics and Mathematics.
+                    </p>
+                    <p>E-mail: bijendra.neupane@finep.nu</p>
+                    <p>Tel: +358 44 3600448</p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold">Project Manager</span>
+                    </p>
+                    <p >
+                      Mr. Mandap has been working with civil engineering for
+                      over 23 years and in the hydropower sector for more than
+                      17 years. Mr. Mandap has Ph.D. in Hydraulic Engineering,
+                      Master's degree of Science in Renewable Energy Engineering
+                      with Bachelor in Civil Engineering. He has responsibility
+                      for hydraulic structures design, project planning, and
+                      contract management. E-mail: mandap@finep.nu
+                    </p>
+                    <p>E-mail: mandap@finep.nu</p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold"
+                        >Assistent Financial Manager</span
+                      >
+                    </p>
+                    <p >
+                      Mr. Vaara has been working with business development in
+                      several co-founded businesses focusing mainly on market
+                      and product development/design for over eight years. Mr.
+                      Vaara has a Master's degree in applied statistics and a
+                      degree of Bachelor of Science in Business Administration
+                      and Economics.​
+                    </p>
+                    <p>Tel: +46 72 5207426</p>
+                  </div>
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >Accounting & Finance Manager</span
+                      >
+                    </p>
+                    <p >
+                      Mrs. Cochache Mendez has been working as a senior
+                      accountant and with business development for accounting in
+                      Peru for several years. Silvia Cochache Mendez has a
+                      Master´s degree of taxation and tax policy.
+                    </p>
+                    <p>E-mail: silvia.mendez@finep.nu</p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold"
+                        >Geo-technical Expert</span
+                      >
+                    </p>
+                    <p >
+                      Mr. Raj Neupane has been working in Geotechnical related
+                      field for more than six years. He has 11 years of
+                      experience in civil engineering. Udaya Raj Neupane has a
+                      Master of Science in Geotechnical Engineering and
+                      Bachelors in Civil Engineering.
+                    </p>
+                    <p>E-mail:udaya.neupane@finep.nu</p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold"
+                        >Solarpower Construction Manager (Ghana)</span
+                      >
+                    </p>
+                    <p >
+                      Mr. Eben has been working with solarpower business and
+                      product development for over 12 years. Mr. Eben has a
+                      Master of Science in Geotechnical Engineering and a
+                      Bachelor of Engineering in Civil Engineering.
+                    </p>
+                    <p>E-mail: eben@finep.nu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="corporate_governance_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>CORPORATE GOVERNANCE</h4>
+                </div>
+                <div class="two_col_containter">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >CORPORATE GOVERNANCE</span
+                      >
+                    </p>
+                    <p >
+                      To ensure a basis of an effective corporate governance
+                      framework, Finep Engineering promote transparency, fair
+                      markets and efficient allocation of resources and acts
+                      only in the rule of law and support effective supervision
+                      and enforcement. Finep Engineering follows ILO Declaration
+                      on Fundamental Principles and Rights at Work and The
+                      Universal Declaration of Human Rights (UDHR). To achieve a
+                      sound corparate governance, Finep Engineering strives to
+                      uphold the following five principles:
+                    </p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold"
+                        >1. Good business ethics</span
+                      >
+                    </p>
+                    <p >
+                      Finep Engineering company´s executives should be honest
+                      and truthful in all their business doings, in all their
+                      business activities. They show personal integrity and will
+                      fight for their beliefs no matter the situation or
+                      pressure. Executives must strive to be honorable and
+                      upright no matter the circumstances; be trustworthy and
+                      just in their business dealings and never use or disclose
+                      information learned in confidence for personal advantage;
+                      accomplish the business objectives in a way that causes
+                      the least harm and the greatest positive good; respect
+                      human dignity, autonomy, privacy, rights, and interests of
+                      all those who have a stake in their decisions; treat all
+                      people with equal respect regardless of sex, race or
+                      national origin; follow the law, rules and regulations
+                      related to their business activities; create an
+                      environment in which ethical decision making is valued;
+                      protect and build the company’s good reputation and the
+                      morale of its employees.
+                    </p>
+                  </div>
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >2. Aligned business goals</span
+                      >
+                    </p>
+                    <p >
+                      Finep Engineering aims to target business goals which
+                      reflects the expectations of all it's investors. This is
+                      accomplished in particular through continuous dialogues
+                      with Finep Engineering´s investors, but also with it´s
+                      partners and staff.
+                    </p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold"
+                        >3. Strategic Management</span
+                      >
+                    </p>
+                    <p >
+                      Finep Engineering is organised and run according to the
+                      following rules:
+                    </p>
+                    <ul>
+                      <li>
+                        <p>
+                          To find and complete hydropower projects with focus on
+                          electro-mechanical equipment and to explore and
+                          complete civil engineering projects.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          To develop, maintain and supervise projects by cost-
+                          efficient use of broad technical resources.
+                        </p>
+                      </li>
+                    </ul>
+                    <p>
+                      <span style="font-weight: bold"
+                        >4. Organisational effectiveness</span
+                      >
+                    </p>
+                    <p >
+                      Finep Engineering is a functional organisation.
+                    </p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold">5. Reporting</span>
+                    </p>
+                    <p >
+                      Finep Engineering believes that improvements of the
+                      organisational effectivenes is an ongoing process, that
+                      consists of modifications of the organisational form and
+                      style through regular consultations with it´s stakeholders
+                      and partners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="corporate_environmental_policy_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>ENVIRONMENTAL POLICY</h4>
+                </div>
+                <div class="single_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >ENVIRONMENTAL POLICY</span
+                      >
+                    </p>
+                    <p >
+                      Finep Engineering´s Environmental Policies, EP, have been
+                      implemented to raise awareness and educate the public and
+                      industry of different environmental impacts that
+                      hydropower can have on the environment, on the community.
+                    </p>
+                    <br />
+                    <p>
+                      <span style="font-weight: bold">VISION</span>
+                    </p>
+                    <p >
+                      Finep Engineering strives to develop hydropower with as
+                      little effect as possible on the following environmental
+                      values (EVs):
+                    </p>
+                    <ul>
+                      <li>
+                        <p>drinking water supply;</p>
+                      </li>
+                      <li>
+                        <p>aquatic ecosystems;</p>
+                      </li>
+                      <li>
+                        <p>
+                          primary industries, (including irrigation, stock
+                          watering, aquaculture, human consumers of aquatic
+                          foods, general farm use);
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          recreational use (swimming, boating, visual
+                          recreation);
+                        </p>
+                      </li>
+                      <li>
+                        <p>industrial water;</p>
+                      </li>
+                      <li>
+                        <p>cultural and spiritual values.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>PROJECTS</h4>
+                </div>
+                <div class="single_col_container">
+                  <div class="text_container">
+                    <p>
+                      <span style="font-weight: bold"
+                        >Hydropower development and financing</span
+                      >
+                    </p>
+                    <p >
+                      - Exploring feasibility and financing options/structures
+                      for run-of-the-river hydropower projects of about 40 and
+                      60 MW in Nepal.
+                    </p>
+                    <br />
+                    <p >
+                      - Investigating several hydropower projects >5MW in Nepal.
+                    </p>
+                    <p>
+                      <span style="font-weight: bold"
+                        >Civil engineering projects
+                      </span>
+                    </p>
+                    <p >
+                      Developing business opportunities in Nordic regions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact_page" class="hide">
+            <div class="yellow_bg">
+              <div class="content_container">
+                <div class="page_title_container">
+                  <h4>CONTACT US</h4>
+                </div>
+                <div
+                  class="three_col_container"
+                  style="width: 50%; align-items: center"
+                >
+                  <div
+                    class="text_container"
+                    style="
+                      border-right: solid 0.35em;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <div>
+                      <p>
+                        <span style="font-weight: bold">GENERAL QUERIES</span>
+                      </p>
+
+                      <p >E-mail: info@finep.nu</p>
+                      <p >Skype: Finep Engine</p>
+                    </div>
+                  </div>
+                  <div
+                    class="text_container"
+                    style="
+                      border-right: solid 0.35em;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <div>
+                      <p>
+                        <span style="font-weight: bold">SALES</span>
+                      </p>
+
+                      <p >E-mail: sales@finep.nu</p>
+                      <p >Tel: +358 44 36 00 448</p>
+                    </div>
+                  </div>
+                  <div
+                    class="text_container"
+                    style="display: flex; justify-content: center"
+                  >
+                    <div>
+                      <p>
+                        <span style="font-weight: bold">PROJECT QUERIES</span>
+                      </p>
+
+                      <p >E-mail: technical@finep.nu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer_content" class="yellow_bg footer_container">
+          <div
+            class="text_container"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div>
+              <p>
+                <span style="font-weight: bold">FINEP ENGINEERING OY</span>
+              </p>
+
+              <p >Prinsessantie 4O 165,</p>
+              <p >00820 Helsinki, Finland</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      function handleClick(event)
-      {
+      function handleClick(event) {
+        event.preventDefault();
         const currentElement = event.target;
-        const indexToSlice = currentElement.href.indexOf('#') + 1;
-        const pageName = currentElement.href.slice(indexToSlice);
-        const activeNav = document.getElementsByClassName('active');
+        console.log(currentElement.id.indexOf("-"));
+        const indexToSlice = currentElement.id.indexOf("-") + 1;
+        const pageName = currentElement.id.slice(indexToSlice);
+        const activeNav = document.getElementsByClassName("active");
         const elementToShow = document.getElementById(pageName);
-        const elementsToHide = document.getElementsByClassName('show');
-        const arrayId = ['home_page', 'services_page', 'about_background_page', 'about_what_we_do_page', 'corporate_management_page', 'corporate_governance_page', 'corporate_environmental_policy_page', 'projects_page', 'contact_page'];
-          for(item of elementsToHide) {
-            arrayId.forEach(id => {
-              if(item.id.includes(id)) {
-                item.classList.remove('show');
-                item.classList.add('hide');
-              }
-            })
-          }
-
-          for(item of activeNav) {
-            if(item.classList.contains('nav-link')) {
-              item.classList.remove('active');
+        const elementsToHide = document.getElementsByClassName("show");
+        const arrayId = [
+          "home_page",
+          "services_page",
+          "about_background_page",
+          "about_what_we_do_page",
+          "corporate_management_page",
+          "corporate_governance_page",
+          "corporate_environmental_policy_page",
+          "projects_page",
+          "contact_page",
+        ];
+        for (item of elementsToHide) {
+          arrayId.forEach((id) => {
+            if (item.id.includes(id)) {
+              item.classList.remove("show");
+              item.classList.add("hide");
             }
-          }
-
-          if(currentElement.id.includes('about')) {
-            const aboutElement = document.getElementById('a-about');
-            aboutElement.classList.add('active');
-          } else if( currentElement.id.includes('corporate')) {
-            const corporateElement = document.getElementById('a-corporate');
-            corporateElement.classList.add('active');
-          } else {
-            currentElement.classList.add('active');
-          }
-          elementToShow.classList.remove('hide');
-          elementToShow.classList.add('show');
-          
-          return;
+          });
         }
+
+        for (item of activeNav) {
+          if (item.classList.contains("nav-link")) {
+            item.classList.remove("active");
+          }
+        }
+
+        if (currentElement.id.includes("about")) {
+          const aboutElement = document.getElementById("a-about");
+          aboutElement.classList.add("active");
+        } else if (currentElement.id.includes("corporate")) {
+          const corporateElement = document.getElementById("a-corporate");
+          corporateElement.classList.add("active");
+        } else {
+          currentElement.classList.add("active");
+        }
+        elementToShow.classList.remove("hide");
+        elementToShow.classList.add("show");
+
+        return;
+      }
     </script>
   </body>
 </html>
